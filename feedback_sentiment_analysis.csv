@@ -1,0 +1,11 @@
+Hospital Name,Patient ID,Feedback Text,Rating,Timestamp,Sentiment Polarity,Sentiment Category
+Apollo Hospital,101,Excellent care and staff were polite.,5,2024-11-10 12:30,1.0,Positive
+Fortis Hospital,102,"Long waiting time, not satisfactory.",2,2024-11-11 14:00,-0.05,Neutral
+Manipal Hospital,103,Doctors were very knowledgeable.,4,2024-11-12 10:45,0.2,Positive
+Columbia Asia,104,Clean and hygienic environment.,5,2024-11-13 09:15,0.3666666666666667,Positive
+Narayana Health,105,Nurses were attentive but billing was slow.,3,2024-11-14 11:20,0.04999999999999999,Neutral
+Sparsh Hospital,106,Great service but parking was an issue.,4,2024-11-15 16:40,0.8,Positive
+BGS Gleneagles Global Hospital,107,Staff was unresponsive during emergency.,2,2024-11-16 18:00,0.0,Neutral
+Aster CMI Hospital,108,Efficient treatment and quick diagnosis.,5,2024-11-17 14:10,0.3333333333333333,Positive
+Victoria Hospital,109,Poor communication from the admin staff.,1,2024-11-18 08:25,-0.4,Negative
+MS Ramaiah Memorial Hospital,110,Highly professional doctors and good facilities.,5,2024-11-19 13:50,0.39999999999999997,Positive
