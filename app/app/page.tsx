@@ -1,101 +1,149 @@
-import Image from "next/image";
+"use client";
+import { Button, Container } from 'react-bootstrap'; // Import React Bootstrap components
+import { useEffect, useRef, useState } from 'react'; // Import useState for managing file state
+import { FaTrash } from 'react-icons/fa'; 
+export default function Page() {
+  const [isRecording, setIsRecording] = useState(false);
+  const [audioUrl, setAudioUrl] = useState<string | null>(null);
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
+  const audioChunksRef = useRef<Blob[]>([]);
 
-export default function Home() {
+  useEffect(() => {
+    // Request microphone access
+    const getMicrophonePermission = async () => {
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        mediaRecorderRef.current = new MediaRecorder(stream);
+
+        mediaRecorderRef.current.ondataavailable = (event) => {
+          audioChunksRef.current.push(event.data);
+        };
+
+        mediaRecorderRef.current.onstop = () => {
+          const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/wav' });
+          const audioUrl = URL.createObjectURL(audioBlob);
+          setAudioUrl(audioUrl);  // Store the URL to play or download
+          audioChunksRef.current = [];  // Clear the audio chunks for the next recording
+        };
+      } catch (err) {
+        console.error('Error accessing microphone:', err);
+      }
+    };
+
+    getMicrophonePermission();
+  }, []);
+
+  const startRecording = () => {
+    if (mediaRecorderRef.current) {
+      mediaRecorderRef.current.start();
+      setIsRecording(true);
+    }
+  };
+
+  const stopRecording = () => {
+    if (mediaRecorderRef.current) {
+      mediaRecorderRef.current.stop();
+      setIsRecording(false);
+    }
+  };
+
+  const [file, setFile] = useState<File | null>(null); // File state for file input
+
+  // Handle file upload
+  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files) {
+      setFile(e.target.files[0]);
+    }
+  };
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <Container className="mt-5">
+      <h1 className="text-center mb-4" style={{ color: '#007bff' }}>MedAssist</h1>
+      <h4 className='text-center mb-5'>Get Rapid Assistance during Emergency</h4>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className="mb-4">
+        <h4 htmlFor="exampleFormControlTextarea1" className="form-label">
+          Enter your symptoms
+        </h4>
+        
+        <div className="position-relative">
+          <textarea
+            className="form-control pe-5"
+            id="exampleFormControlTextarea1"
+            rows="5"
+            placeholder="Describe your symptoms here..."
+          ></textarea>
+
+          {/* Voice Input Section */}
+          
+<div className="container mt-5">
+  <h4>Tell us about your symptoms through voice input</h4>
+  <div className="d-flex justify-content-center align-items-center">
+    <Button 
+      variant={isRecording ? "danger" : "primary"} 
+      onClick={isRecording ? stopRecording : startRecording}
+    >
+      {isRecording ? "Stop Recording 🎤" : "Start Recording 🎤"}
+    </Button>
+  </div>
+
+  {audioUrl && (
+    <div className="mt-4">
+      <h5>Recorded Audio</h5>
+      <audio controls src={audioUrl}></audio>
+      <div className="mt-2 d-flex align-items-center">
+        {/* Delete Button */}
+        <Button
+          variant="danger"
+          size="sm"
+          className="ms-2 d-flex align-items-center"
+          onClick={() => setAudioUrl(null)} // Reset audioUrl state to null
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <FaTrash className="me-1" /> Delete
+        </Button>
+      </div>
     </div>
+  )}
+</div>
+        </div>
+      </div>
+
+      {/* Upload File Section */}
+    
+<div className="mb-4">
+  <h4 htmlFor="fileUpload" className="form-label">
+    Upload an image of the symptoms
+  </h4>
+  <input
+    type="file"
+    className="form-control"
+    id="fileUpload"
+    onChange={handleFileUpload}
+  />
+  {file && (
+    <div className="mt-2">
+      <small className="text-muted">File uploaded: {file.name}</small>
+      {/* Delete Button with Icon */}
+      <Button
+        variant="danger"
+        size="sm"
+        className="ms-2"
+        onClick={() => setFile(null)} // Reset the file state to null
+      >
+        <FaTrash /> {/* Displaying the trash icon */}
+      </Button>
+    </div>
+  )}
+</div>
+      {/* Submit Button */}
+      <div className="col-12 mt-4">
+        <Button variant="primary" type="submit">Submit</Button>
+      </div>
+
+      {/* Decorative Footer */}
+      <footer className="text-center mt-5">
+        <p className="text-muted">Powered by MedAssist</p>
+      </footer>
+    </Container>
   );
 }
