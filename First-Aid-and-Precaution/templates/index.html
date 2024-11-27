@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom-Based Disease Prediction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
 
+    <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold mb-6 text-center">Symptom-Based Disease Prediction</h1>
+        
+        <div class="mb-4">
+            <label for="inputType" class="block text-gray-700">Choose input method:</label>
+            <select id="inputType" class="w-full p-2 border border-gray-300 rounded-md">
+                <option value="text">Text Input</option>
+                <option value="audio">Audio Input</option>
+            </select>
+        </div>
+
+        <div id="textInputDiv" class="mb-4">
+            <label for="symptoms" class="block text-gray-700">Enter your symptoms:</label>
+            <input type="text" id="symptoms" name="symptoms" class="w-full p-2 border border-gray-300 rounded-md" placeholder="e.g. headache, fever, fatigue">
+        </div>
+
+        <div id="audioInputDiv" class="hidden mb-4">
+            <label class="block text-gray-700">Record Symptoms:</label>
+            <button id="recordButton" onclick="startRecording()" class="w-full bg-green-500 text-white p-3 rounded-lg">Start Recording</button>
+            <button id="stopButton" onclick="stopRecording()" class="w-full bg-red-500 text-white p-3 rounded-lg mt-2 hidden">Stop Recording</button>
+        </div>
+
+        <button onclick="getPrediction()" class="w-full bg-blue-500 text-white p-3 rounded-lg mt-4">Submit</button>
+
+        <div id="response" class="mt-6 p-4 border border-gray-300 rounded-md hidden">
+            <h2 class="font-semibold text-lg">Prediction Result:</h2>
+            <p id="predictedDisease" class="text-gray-800"></p>
+            <p id="severityInfo" class="text-gray-600"></p>
+            <p id="generatedText" class="text-gray-600"></p>
+        </div>
+    </div>
+
+    <script>
+        let audioBlob = null;
+        let mediaRecorder = null;
+
+        document.getElementById("inputType").addEventListener("change", function() {
+            const inputType = this.value;
+            if (inputType === "audio") {
+                document.getElementById("audioInputDiv").classList.remove("hidden");
+                document.getElementById("textInputDiv").classList.add("hidden");
+            } else {
+                document.getElementById("textInputDiv").classList.remove("hidden");
+                document.getElementById("audioInputDiv").classList.add("hidden");
+            }
+        });
+
+        // Start recording
+        function startRecording() {
+            navigator.mediaDevices.getUserMedia({ audio: true })
+                .then(stream => {
+                    mediaRecorder = new MediaRecorder(stream);
+                    mediaRecorder.ondataavailable = function(event) {
+                        audioBlob = event.data;
+                    };
+                    mediaRecorder.start();
+                    document.getElementById("stopButton").classList.remove("hidden");
+                    document.getElementById("recordButton").classList.add("hidden");
+                });
+        }
+
+        // Stop recording
+        function stopRecording() {
+            mediaRecorder.stop();
+            document.getElementById("stopButton").classList.add("hidden");
+            document.getElementById("recordButton").classList.remove("hidden");
+        }
+
+        // Send the data (text or audio) to the backend
+        async function getPrediction() {
+            const inputType = document.getElementById("inputType").value;
+            let symptoms = "";
+            
+            if (inputType === "text") {
+                symptoms = document.getElementById("symptoms").value;
+            } else if (inputType === "audio" && audioBlob) {
+                const formData = new FormData();
+                formData.append('audio', audioBlob, 'audio.wav');
+                
+                // Send audio to Flask for processing
+                const response = await fetch('/process_audio', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+                symptoms = data.transcribed_text;  // Use transcribed text from Vosk
+            }
+
+            if (!symptoms) {
+                alert("Please provide symptoms.");
+                return;
+            }
+
+            try {
+                const response = await fetch('/predict', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ symptoms: symptoms })
+                });
+
+                const data = await response.json();
+
+                // Update the UI with the response
+                document.getElementById('predictedDisease').innerText = `Disease: ${data.predicted_disease}`;
+                document.getElementById('severityInfo').innerText = `Severity: ${data.severity_info.Severity || 'N/A'}`;
+                document.getElementById('generatedText').innerText = `First Aid/Self-Care: ${data.generated_text || 'N/A'}`;
+
+                // Show the response section
+                document.getElementById('response').classList.remove('hidden');
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error occurred while getting prediction.');
+            }
+        }
+    </script>
+
+</body>
+</html>
