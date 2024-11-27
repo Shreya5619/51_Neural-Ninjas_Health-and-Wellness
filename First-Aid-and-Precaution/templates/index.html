@@ -6,98 +6,38 @@
     <title>Symptom-Based Disease Prediction</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 p-8">
+<body class="bg-gradient-to-r from-blue-50 to-blue-100 min-h-screen flex items-center justify-center">
 
-    <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-lg">
-        <h1 class="text-3xl font-bold mb-6 text-center">Symptom-Based Disease Prediction</h1>
+    <div class="max-w-lg w-full bg-white p-8 rounded-lg shadow-xl">
+        <h1 class="text-4xl font-bold mb-6 text-center text-blue-600">Symptom-Based Prediction</h1>
+        <p class="text-gray-600 text-center mb-8">Enter your symptoms below to predict the disease and get helpful advice.</p>
         
-        <div class="mb-4">
-            <label for="inputType" class="block text-gray-700">Choose input method:</label>
-            <select id="inputType" class="w-full p-2 border border-gray-300 rounded-md">
-                <option value="text">Text Input</option>
-                <option value="audio">Audio Input</option>
-            </select>
+        <!-- Input Field -->
+        <div class="mb-6">
+            <label for="symptoms" class="block text-lg font-medium text-gray-700 mb-2">Enter Your Symptoms:</label>
+            <input type="text" id="symptoms" name="symptoms" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="e.g., headache, fever, fatigue" required>
         </div>
 
-        <div id="textInputDiv" class="mb-4">
-            <label for="symptoms" class="block text-gray-700">Enter your symptoms:</label>
-            <input type="text" id="symptoms" name="symptoms" class="w-full p-2 border border-gray-300 rounded-md" placeholder="e.g. headache, fever, fatigue">
-        </div>
+        <!-- Submit Button -->
+        <button onclick="getPrediction()" class="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold shadow-lg hover:bg-blue-600 focus:outline-none">
+            Submit
+        </button>
 
-        <div id="audioInputDiv" class="hidden mb-4">
-            <label class="block text-gray-700">Record Symptoms:</label>
-            <button id="recordButton" onclick="startRecording()" class="w-full bg-green-500 text-white p-3 rounded-lg">Start Recording</button>
-            <button id="stopButton" onclick="stopRecording()" class="w-full bg-red-500 text-white p-3 rounded-lg mt-2 hidden">Stop Recording</button>
-        </div>
-
-        <button onclick="getPrediction()" class="w-full bg-blue-500 text-white p-3 rounded-lg mt-4">Submit</button>
-
-        <div id="response" class="mt-6 p-4 border border-gray-300 rounded-md hidden">
-            <h2 class="font-semibold text-lg">Prediction Result:</h2>
-            <p id="predictedDisease" class="text-gray-800"></p>
-            <p id="severityInfo" class="text-gray-600"></p>
-            <p id="generatedText" class="text-gray-600"></p>
+        <!-- Response Section -->
+        <div id="response" class="mt-8 p-6 border border-blue-200 rounded-lg bg-blue-50 hidden">
+            <h2 class="font-bold text-2xl text-blue-600 mb-4">Prediction Result:</h2>
+            <p id="predictedDisease" class="text-lg text-gray-800 font-semibold"></p>
+            <p id="severityInfo" class="text-lg text-gray-700 mt-2"></p>
+            <p id="generatedText" class="text-lg text-gray-700 mt-2"></p>
         </div>
     </div>
 
     <script>
-        let audioBlob = null;
-        let mediaRecorder = null;
-
-        document.getElementById("inputType").addEventListener("change", function() {
-            const inputType = this.value;
-            if (inputType === "audio") {
-                document.getElementById("audioInputDiv").classList.remove("hidden");
-                document.getElementById("textInputDiv").classList.add("hidden");
-            } else {
-                document.getElementById("textInputDiv").classList.remove("hidden");
-                document.getElementById("audioInputDiv").classList.add("hidden");
-            }
-        });
-
-        // Start recording
-        function startRecording() {
-            navigator.mediaDevices.getUserMedia({ audio: true })
-                .then(stream => {
-                    mediaRecorder = new MediaRecorder(stream);
-                    mediaRecorder.ondataavailable = function(event) {
-                        audioBlob = event.data;
-                    };
-                    mediaRecorder.start();
-                    document.getElementById("stopButton").classList.remove("hidden");
-                    document.getElementById("recordButton").classList.add("hidden");
-                });
-        }
-
-        // Stop recording
-        function stopRecording() {
-            mediaRecorder.stop();
-            document.getElementById("stopButton").classList.add("hidden");
-            document.getElementById("recordButton").classList.remove("hidden");
-        }
-
-        // Send the data (text or audio) to the backend
         async function getPrediction() {
-            const inputType = document.getElementById("inputType").value;
-            let symptoms = "";
-            
-            if (inputType === "text") {
-                symptoms = document.getElementById("symptoms").value;
-            } else if (inputType === "audio" && audioBlob) {
-                const formData = new FormData();
-                formData.append('audio', audioBlob, 'audio.wav');
-                
-                // Send audio to Flask for processing
-                const response = await fetch('/process_audio', {
-                    method: 'POST',
-                    body: formData
-                });
-                const data = await response.json();
-                symptoms = data.transcribed_text;  // Use transcribed text from Vosk
-            }
+            const symptoms = document.getElementById('symptoms').value;
 
             if (!symptoms) {
-                alert("Please provide symptoms.");
+                alert("Please enter some symptoms.");
                 return;
             }
 
@@ -114,8 +54,8 @@
 
                 // Update the UI with the response
                 document.getElementById('predictedDisease').innerText = `Disease: ${data.predicted_disease}`;
-                document.getElementById('severityInfo').innerText = `Severity: ${data.severity_info.Severity || 'N/A'}`;
-                document.getElementById('generatedText').innerText = `First Aid/Self-Care: ${data.generated_text || 'N/A'}`;
+                document.getElementById('severityInfo').innerText = `Severity: ${data.severity_info}`;
+                document.getElementById('generatedText').innerText = `First Aid/Self-Care: ${data.generated_text}`;
 
                 // Show the response section
                 document.getElementById('response').classList.remove('hidden');
