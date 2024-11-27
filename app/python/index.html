@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulance Scoring</title>
+</head>
+<body>
+    <h1>Ambulance Scoring System</h1>
+    <form id="ambulance-form">
+        <label for="lat">Latitude:</label>
+        <input type="text" id="lat" name="lat" required><br>
+        <label for="lon">Longitude:</label>
+        <input type="text" id="lon" name="lon" required><br>
+        <label for="severity">Severity (1-10):</label>
+        <input type="number" id="severity" name="severity" min="1" max="10" required><br>
+        <label for="cardiac">Cardiac Support:</label>
+        <input type="checkbox" id="cardiac" name="cardiac"><br>
+        <label for="oxygen">Oxygen Support:</label>
+        <input type="checkbox" id="oxygen" name="oxygen"><br>
+        <label for="ventilation">Ventilation:</label>
+        <input type="checkbox" id="ventilation" name="ventilation"><br>
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <div id="result"></div>
+    <div id="map"></div>
+
+    <script>
+        async function submitForm() {
+            const formData = {
+                lat: document.getElementById('lat').value,
+                lon: document.getElementById('lon').value,
+                severity: document.getElementById('severity').value,
+                cardiac: document.getElementById('cardiac').checked,
+                oxygen: document.getElementById('oxygen').checked,
+                ventilation: document.getElementById('ventilation').checked
+            };
+
+            const response = await fetch('/get_ambulance', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+
+            const result = await response.json();
+            document.getElementById('result').innerHTML = JSON.stringify(result.ambulance, null, 2);
+            document.getElementById('map').innerHTML = result.map;
+        }
+    </script>
+</body>
+</html>
