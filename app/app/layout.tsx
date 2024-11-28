@@ -3,6 +3,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
+import 'leaflet/dist/leaflet.css'; // Ensure this is present to include other global styles
+
 
 // Layout component serves as a wrapper for all pages
 export default function Layout({ children }: { children: ReactNode }) {

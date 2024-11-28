@@ -1,12 +1,19 @@
 import os
+import concurrent.futures
+
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # Import CORS
 import pandas as pd
 import numpy as np
 import geopy.distance
 import requests
 import time
 
+# Initialize the Flask app
 app = Flask(__name__)
+
+# Enable CORS for all routes
+CORS(app)
 
 # Global configurations
 API_KEY = '5b3ce3597851110001cf6248eb38bd3e8a4748269c41294631f48c0e'
@@ -64,12 +71,20 @@ def score_generation(lat, lon, severity, cardiac, oxygen, ventilation):
     locations = df[['Longitude', 'Latitude']].values.tolist()
     origin = [float(lon), float(lat)]
     all_coordinates = [[loc, origin] for loc in locations]
+    
+    # Using concurrent futures for parallel processing
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        # Parallelizing batch ETA calls
+        results = list(executor.map(lambda batch: batch_eta(batch, API_KEY, ORS_URL), all_coordinates))
+    
     etas = []
-    for batch in all_coordinates:
-        duration_matrix = batch_eta(batch, API_KEY, ORS_URL)
+    for duration_matrix in results:
         if duration_matrix:
-            print(f"Duration matrix for batch {batch}: {duration_matrix}")
+            # We assume the second element in the duration matrix gives the duration from origin to destination
             etas.append(duration_matrix[0][1] // 60)
+        else:
+            etas.append(0)  # If no result, append 0 as default ETA
+    
     df['ETA'] = etas
     distance_km = [
         geopy.distance.distance((lat, lon), (row.Latitude, row.Longitude)).km
