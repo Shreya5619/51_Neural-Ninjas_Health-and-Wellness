@@ -2,6 +2,7 @@
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet'; // Import Leaflet for custom icon classes
+import { useEffect, useState } from 'react';
 
 // Define the interface for props
 interface MapPageProps {
@@ -12,6 +13,8 @@ interface MapPageProps {
 }
 
 const MapPage = ({ lat1, lon1, lat2, lon2 }: MapPageProps) => {
+  const [map, setMap] = useState<any>(null);
+
   const position: [number, number] = [lat1, lon1]; // Current location from props
   const secondLocation: [number, number] = [lat2, lon2]; // Second location from props
 
@@ -32,15 +35,22 @@ const MapPage = ({ lat1, lon1, lat2, lon2 }: MapPageProps) => {
     className: 'leaflet-div-icon', // Custom class for CSS styling
   });
 
+  // Adjust map center when the coordinates change
+  useEffect(() => {
+    if (map) {
+      map.setView(position, map.getZoom()); // Update map center
+    }
+  }, [lat1, lon1, map]); // Trigger when lat1 or lon1 changes
+
   return (
     <div style={{ height: '100vh' }}>
       <h2>Selected Ambulance</h2>
       {/* Initialize MapContainer once */}
       <MapContainer
-        key={`${lat1}-${lon1}-${lat2}-${lon2}`} // Force reinitialization if coordinates change
         center={position}
         zoom={12}
         style={{ height: '100%', width: '100%' }}
+        whenReady={(mapInstance: any) => setMap(mapInstance)} // Store map instance
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

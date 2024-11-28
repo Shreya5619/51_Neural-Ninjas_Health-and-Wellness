@@ -1,62 +1,51 @@
 "use client";
-import { useEffect, useState } from 'react';
-import MapPage from './map/page';
+
+import { useState, useEffect } from "react";
+import { Container, Row, Col, Form, Button, Card, Alert, Spinner } from "react-bootstrap";
+import RecommendedAmbulance from "./recommendAmbulance";
 
 const AmbulanceForm = () => {
   const [latitude, setLatitude] = useState(12.985332);
   const [longitude, setLongitude] = useState(77.9544343);
-  const [latitude1, setLatitude1] = useState(12.985332);
-  const [longitude1, setLongitude1] = useState(77.9544343);
-  const [error, setError] = useState(null);
   const [severity, setSeverity] = useState<number>(0);
   const [cardiac, setCardiac] = useState<boolean>(false);
   const [oxygen, setOxygen] = useState<boolean>(false);
   const [ventilation, setVentilation] = useState<boolean>(false);
   const [result, setResult] = useState<any>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
+    setLoading(true);
 
     const requestData = {
-      latitude: (latitude),
-      longitude: (longitude),
-      severity: severity,
+      latitude,
+      longitude,
+      severity,
       cardiac: cardiac ? 1 : 0,
       oxygen: oxygen ? 1 : 0,
       ventilation: ventilation ? 1 : 0,
     };
 
-    fetch('http://localhost:5000/recommend_ambulance', {
-      method: 'POST',
+    fetch("http://localhost:5000/recommend_ambulance", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(requestData),
     })
-    .then((response) => {
-      console.log("Response:", response); // Logs the raw Response object
-      console.log("Type of response:", typeof response); // Logs 'object', since the response is an object
-      return response.json(); // Parse the JSON from the response
-    })
-    .then((data) => {
-      console.log("Response data:", data); // Logs the parsed JSON array
-      if (data.length > 0) {
-        const firstAmbulance = data[0]; 
-        setLatitude1(firstAmbulance.Latitude)
-        setLongitude1(firstAmbulance.Longitude)// Access the first object in the array
-        console.log("Latitude:", firstAmbulance.Latitude); // Logs the latitude
-        console.log("Longitude:", firstAmbulance.Longitude); // Logs the longitude
-      } else {
-        console.warn("No ambulance data received.");
-      }
-  
-      setResult(data); // Save the data to your state
-    })
-      .catch((error) => {
-        console.error('Error or network issue:', error); // Handle any errors or network issues
+      .then((response) => response.json())
+      .then((data) => {
+        setLoading(false);
+        setResult(data);
+      })
+      .catch((err) => {
+        setLoading(false);
+        setError("Failed to fetch ambulance recommendations. Please try again.");
       });
   };
+
   useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -65,7 +54,7 @@ const AmbulanceForm = () => {
           setLongitude(position.coords.longitude);
         },
         (err) => {
-          setError(err.message);
+          setError("Could not retrieve your location.");
         }
       );
     } else {
@@ -74,88 +63,112 @@ const AmbulanceForm = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Ambulance Recommendation</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Latitude:
-          <input
-            type="number"
-            step="any"
-            value={latitude}
-            onChange={(e) => setLatitude(parseFloat(e.target.value))}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Longitude:
-          <input
-            type="number"
-            step="any"
-            value={longitude}
-            onChange={(e) => setLongitude(parseFloat(e.target.value))}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Severity (1-10):
-          <input
-            type="number"
-            min="1"
-            max="10"
-            value={severity}
-            onChange={(e) => setSeverity(Number(e.target.value))}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Cardiac:
-          <input
-            type="checkbox"
-            checked={cardiac}
-            onChange={() => setCardiac(!cardiac)}
-          />
-        </label>
-        <br />
-        <label>
-          Oxygen:
-          <input
-            type="checkbox"
-            checked={oxygen}
-            onChange={() => setOxygen(!oxygen)}
-          />
-        </label>
-        <br />
-        <label>
-          Ventilation:
-          <input
-            type="checkbox"
-            checked={ventilation}
-            onChange={() => setVentilation(!ventilation)}
-          />
-        </label>
-        <br />
-        <button type="submit">Get Ambulance</button>
-      </form>
-
-      {result && (
-        <div>
-          <h3>Recommended Ambulance</h3>
-          <pre>{JSON.stringify(result, null, 2)}</pre>
-        </div>
-        
-      )}
-
-{result && (
-        <div>
-          <h3>Recommended Ambulance</h3>
-          <pre><MapPage lat1={latitude1} lon1={longitude1} lat2={latitude} lon2={longitude}/></pre>
-          getCurrentPosition
-        </div>
+    <div className="min-h-screen bg-gradient-to-r from-blue-400 via-teal-300 to-green-300 p-5 flex items-center">
+      <Container>
+        <Row className="justify-content-center">
+          <Col md={8}>
+            <Card className="shadow-lg">
+              <Card.Body>
+                <h2 className="text-center text-3xl font-bold mb-4 text-blue-700">
+                  🚑 Ambulance Recommendation
+                </h2>
+                <Form onSubmit={handleSubmit}>
+                  <Row>
+                    <Col md={6}>
+                      <Form.Group controlId="latitude" className="mb-3">
+                        <Form.Label>Latitude</Form.Label>
+                        <Form.Control
+                          type="number"
+                          step="any"
+                          value={latitude}
+                          onChange={(e) => setLatitude(parseFloat(e.target.value))}
+                          required
+                        />
+                      </Form.Group>
+                    </Col>
+                    <Col md={6}>
+                      <Form.Group controlId="longitude" className="mb-3">
+                        <Form.Label>Longitude</Form.Label>
+                        <Form.Control
+                          type="number"
+                          step="any"
+                          value={longitude}
+                          onChange={(e) => setLongitude(parseFloat(e.target.value))}
+                          required
+                        />
+                      </Form.Group>
+                    </Col>
+                  </Row>
+                  <Form.Group controlId="severity" className="mb-3">
+                    <Form.Label>Severity (1-10)</Form.Label>
+                    <Form.Control
+                      type="number"
+                      min="1"
+                      max="10"
+                      value={severity}
+                      onChange={(e) => setSeverity(Number(e.target.value))}
+                      required
+                    />
+                  </Form.Group>
+                  <Row>
+                    <Col md={4}>
+                      <Form.Check
+                        type="checkbox"
+                        id="cardiac"
+                        label="Cardiac Support"
+                        checked={cardiac}
+                        onChange={() => setCardiac(!cardiac)}
+                      />
+                    </Col>
+                    <Col md={4}>
+                      <Form.Check
+                        type="checkbox"
+                        id="oxygen"
+                        label="Oxygen Support"
+                        checked={oxygen}
+                        onChange={() => setOxygen(!oxygen)}
+                      />
+                    </Col>
+                    <Col md={4}>
+                      <Form.Check
+                        type="checkbox"
+                        id="ventilation"
+                        label="Ventilation Support"
+                        checked={ventilation}
+                        onChange={() => setVentilation(!ventilation)}
+                      />
+                    </Col>
+                  </Row>
+                  <div className="mt-4 text-center">
+                    <Button
+                      type="submit"
+                      variant="primary"
+                      className="px-4 py-2"
+                      disabled={loading}
+                    >
+                      {loading ? (
+                        <>
+                          <Spinner animation="border" size="sm" /> Submitting...
+                        </>
+                      ) : (
+                        "Get Ambulance"
+                      )}
+                    </Button>
+                  </div>
+                </Form>
+                {error && (
+                  <Alert variant="danger" className="mt-4">
+                    {error}
+                  </Alert>
+                )}
+               {result && result.length > 0 && (
+  <RecommendedAmbulance ambulance={result[0]} />
 )}
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
