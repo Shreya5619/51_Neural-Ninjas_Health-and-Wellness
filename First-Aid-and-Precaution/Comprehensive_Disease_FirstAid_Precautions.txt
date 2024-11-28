@@ -1,0 +1,1399 @@
+
+Disease: Fungal infection
+First Aid:
+Clean the affected area with mild soap and water. Pat the area completely dry. Apply over-the-counter antifungal creams or powders as directed. Avoid scratching to prevent further irritation. If symptoms persist, consult a dermatologist.
+Precautions:
+Keep the skin clean and dry. Avoid wearing tight or synthetic clothing. Change out of sweaty clothes promptly. Use antifungal powders in high-moisture areas like feet or groin. Do not share personal items like towels.
+
+
+Disease: Allergy
+First Aid:
+Remove yourself from the source of the allergen immediately. Take antihistamines to alleviate mild symptoms like itching or rashes. Use cool compresses on affected areas to reduce swelling. For severe reactions (e.g., breathing difficulties), administer an epinephrine auto-injector and call emergency services.
+Precautions:
+Identify triggers through allergy testing. Avoid known allergens and maintain a clean environment to minimize dust and pollen exposure. Carry an EpiPen if prescribed and wear a medical alert bracelet.
+
+
+Disease: GERD
+First Aid:
+Sip water to neutralize stomach acid. Chew non-mint gum to increase saliva and reduce acid levels. Avoid lying down for at least 2-3 hours after eating. If discomfort persists, take antacids or consult a healthcare provider for prescription medications.
+Precautions:
+Eat small, frequent meals instead of large ones. Avoid trigger foods such as spicy, fatty, or acidic items. Maintain a healthy weight and avoid alcohol and smoking, as these can exacerbate symptoms.
+
+
+Disease: Chronic cholestasis
+First Aid:
+Consult a healthcare provider promptly if symptoms like severe itching or jaundice occur. In the meantime, avoid alcohol to reduce liver stress. Use cool compresses or take antihistamines for symptom relief.
+Precautions:
+Adopt a low-fat diet to support liver health. Monitor liver function regularly and avoid medications that can strain the liver. Stay hydrated and avoid exposure to environmental toxins.
+
+
+Disease: Drug Reaction
+First Aid:
+Discontinue the suspected medication immediately. For mild reactions like rashes, take antihistamines and apply calamine lotion to soothe the skin. For severe reactions like anaphylaxis, administer an epinephrine auto-injector and seek emergency medical help.
+Precautions:
+Keep a detailed record of past drug reactions and inform healthcare providers of allergies. Always double-check prescriptions and read medication labels carefully.
+
+
+Disease: Peptic ulcer disease
+First Aid:
+Avoid eating or drinking substances that irritate the stomach, such as spicy foods, alcohol, or caffeine. Take antacids for immediate relief. Seek medical attention if you experience severe pain or blood in stools.
+Precautions:
+Avoid NSAIDs like aspirin or ibuprofen unless directed by a doctor. Eat smaller meals and avoid smoking and excessive alcohol consumption.
+
+
+Disease: AIDS
+First Aid:
+Ensure wounds or injuries are cleaned and bandaged to prevent infections. Use antiseptic solutions to disinfect any cuts. Seek medical advice immediately if opportunistic infections are suspected.
+Precautions:
+Follow antiretroviral therapy (ART) consistently as prescribed. Avoid exposure to infections by practicing good hygiene and avoiding contact with sick individuals.
+
+
+Disease: Diabetes
+First Aid:
+For low blood sugar (hypoglycemia), consume fast-acting carbohydrates like glucose tablets, candy, or fruit juice. For high blood sugar, ensure hydration and check blood sugar levels. Seek emergency care if symptoms worsen.
+Precautions:
+Monitor blood sugar levels regularly. Maintain a balanced diet, engage in regular physical activity, and adhere to prescribed medications or insulin therapy.
+
+
+Disease: Gastroenteritis
+First Aid:
+Stay hydrated by drinking oral rehydration solutions (ORS) or clear fluids. Avoid solid foods until vomiting or diarrhea subsides. Rest and monitor for signs of dehydration, such as dry mouth or reduced urine output.
+Precautions:
+Wash hands frequently to prevent the spread of infection. Avoid consuming contaminated food or water. Ensure proper food hygiene practices.
+
+
+Disease: Bronchial Asthma
+First Aid:
+Use a prescribed rescue inhaler immediately during an asthma attack. Sit upright to improve breathing. Seek emergency medical help if symptoms persist or worsen.
+Precautions:
+Identify and avoid triggers like allergens, smoke, or cold air. Follow a treatment plan with maintenance inhalers and medications.
+
+
+Disease: Hypertension
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Migraine
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Cervical spondylosis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Paralysis (brain hemorrhage)
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Jaundice
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Malaria
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Chicken pox
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Dengue
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Typhoid
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis A
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis B
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis C
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis D
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis E
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Alcoholic hepatitis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Tuberculosis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Common Cold
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Pneumonia
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Dimorphic hemorrhoids (piles)
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Heart attack
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Varicose veins
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hypothyroidism
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hyperthyroidism
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hypoglycemia
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Osteoarthritis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Arthritis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: (vertigo) Paroxysmal Positional Vertigo
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Acne
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Urinary tract infection
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Psoriasis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Impetigo
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Fungal infection
+First Aid:
+Clean the affected area with mild soap and water. Pat the area completely dry. Apply over-the-counter antifungal creams or powders as directed. Avoid scratching to prevent further irritation. If symptoms persist, consult a dermatologist.
+Precautions:
+Keep the skin clean and dry. Avoid wearing tight or synthetic clothing. Change out of sweaty clothes promptly. Use antifungal powders in high-moisture areas like feet or groin. Do not share personal items like towels.
+
+
+Disease: Allergy
+First Aid:
+Remove yourself from the source of the allergen immediately. Take antihistamines to alleviate mild symptoms like itching or rashes. Use cool compresses on affected areas to reduce swelling. For severe reactions (e.g., breathing difficulties), administer an epinephrine auto-injector and call emergency services.
+Precautions:
+Identify triggers through allergy testing. Avoid known allergens and maintain a clean environment to minimize dust and pollen exposure. Carry an EpiPen if prescribed and wear a medical alert bracelet.
+
+
+Disease: GERD
+First Aid:
+Sip water to neutralize stomach acid. Chew non-mint gum to increase saliva and reduce acid levels. Avoid lying down for at least 2-3 hours after eating. If discomfort persists, take antacids or consult a healthcare provider for prescription medications.
+Precautions:
+Eat small, frequent meals instead of large ones. Avoid trigger foods such as spicy, fatty, or acidic items. Maintain a healthy weight and avoid alcohol and smoking, as these can exacerbate symptoms.
+
+
+Disease: Chronic cholestasis
+First Aid:
+Consult a healthcare provider promptly if symptoms like severe itching or jaundice occur. In the meantime, avoid alcohol to reduce liver stress. Use cool compresses or take antihistamines for symptom relief.
+Precautions:
+Adopt a low-fat diet to support liver health. Monitor liver function regularly and avoid medications that can strain the liver. Stay hydrated and avoid exposure to environmental toxins.
+
+
+Disease: Drug Reaction
+First Aid:
+Discontinue the suspected medication immediately. For mild reactions like rashes, take antihistamines and apply calamine lotion to soothe the skin. For severe reactions like anaphylaxis, administer an epinephrine auto-injector and seek emergency medical help.
+Precautions:
+Keep a detailed record of past drug reactions and inform healthcare providers of allergies. Always double-check prescriptions and read medication labels carefully.
+
+
+Disease: Peptic ulcer disease
+First Aid:
+Avoid eating or drinking substances that irritate the stomach, such as spicy foods, alcohol, or caffeine. Take antacids for immediate relief. Seek medical attention if you experience severe pain or blood in stools.
+Precautions:
+Avoid NSAIDs like aspirin or ibuprofen unless directed by a doctor. Eat smaller meals and avoid smoking and excessive alcohol consumption.
+
+
+Disease: AIDS
+First Aid:
+Ensure wounds or injuries are cleaned and bandaged to prevent infections. Use antiseptic solutions to disinfect any cuts. Seek medical advice immediately if opportunistic infections are suspected.
+Precautions:
+Follow antiretroviral therapy (ART) consistently as prescribed. Avoid exposure to infections by practicing good hygiene and avoiding contact with sick individuals.
+
+
+Disease: Diabetes
+First Aid:
+For low blood sugar (hypoglycemia), consume fast-acting carbohydrates like glucose tablets, candy, or fruit juice. For high blood sugar, ensure hydration and check blood sugar levels. Seek emergency care if symptoms worsen.
+Precautions:
+Monitor blood sugar levels regularly. Maintain a balanced diet, engage in regular physical activity, and adhere to prescribed medications or insulin therapy.
+
+
+Disease: Gastroenteritis
+First Aid:
+Stay hydrated by drinking oral rehydration solutions (ORS) or clear fluids. Avoid solid foods until vomiting or diarrhea subsides. Rest and monitor for signs of dehydration, such as dry mouth or reduced urine output.
+Precautions:
+Wash hands frequently to prevent the spread of infection. Avoid consuming contaminated food or water. Ensure proper food hygiene practices.
+
+
+Disease: Bronchial Asthma
+First Aid:
+Use a prescribed rescue inhaler immediately during an asthma attack. Sit upright to improve breathing. Seek emergency medical help if symptoms persist or worsen.
+Precautions:
+Identify and avoid triggers like allergens, smoke, or cold air. Follow a treatment plan with maintenance inhalers and medications.
+
+
+Disease: Hypertension
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Migraine
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Cervical spondylosis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Paralysis (brain hemorrhage)
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Jaundice
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Malaria
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Chicken pox
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Dengue
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Typhoid
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis A
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis B
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis C
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis D
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis E
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Alcoholic hepatitis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Tuberculosis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Common Cold
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Pneumonia
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Dimorphic hemorrhoids (piles)
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Heart attack
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Varicose veins
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hypothyroidism
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hyperthyroidism
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hypoglycemia
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Osteoarthritis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Arthritis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: (vertigo) Paroxysmal Positional Vertigo
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Acne
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Urinary tract infection
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Psoriasis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Impetigo
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Fungal infection
+First Aid:
+Clean the affected area with mild soap and water. Pat the area completely dry. Apply over-the-counter antifungal creams or powders as directed. Avoid scratching to prevent further irritation. If symptoms persist, consult a dermatologist.
+Precautions:
+Keep the skin clean and dry. Avoid wearing tight or synthetic clothing. Change out of sweaty clothes promptly. Use antifungal powders in high-moisture areas like feet or groin. Do not share personal items like towels.
+
+
+Disease: Allergy
+First Aid:
+Remove yourself from the source of the allergen immediately. Take antihistamines to alleviate mild symptoms like itching or rashes. Use cool compresses on affected areas to reduce swelling. For severe reactions (e.g., breathing difficulties), administer an epinephrine auto-injector and call emergency services.
+Precautions:
+Identify triggers through allergy testing. Avoid known allergens and maintain a clean environment to minimize dust and pollen exposure. Carry an EpiPen if prescribed and wear a medical alert bracelet.
+
+
+Disease: GERD
+First Aid:
+Sip water to neutralize stomach acid. Chew non-mint gum to increase saliva and reduce acid levels. Avoid lying down for at least 2-3 hours after eating. If discomfort persists, take antacids or consult a healthcare provider for prescription medications.
+Precautions:
+Eat small, frequent meals instead of large ones. Avoid trigger foods such as spicy, fatty, or acidic items. Maintain a healthy weight and avoid alcohol and smoking, as these can exacerbate symptoms.
+
+
+Disease: Chronic cholestasis
+First Aid:
+Consult a healthcare provider promptly if symptoms like severe itching or jaundice occur. In the meantime, avoid alcohol to reduce liver stress. Use cool compresses or take antihistamines for symptom relief.
+Precautions:
+Adopt a low-fat diet to support liver health. Monitor liver function regularly and avoid medications that can strain the liver. Stay hydrated and avoid exposure to environmental toxins.
+
+
+Disease: Drug Reaction
+First Aid:
+Discontinue the suspected medication immediately. For mild reactions like rashes, take antihistamines and apply calamine lotion to soothe the skin. For severe reactions like anaphylaxis, administer an epinephrine auto-injector and seek emergency medical help.
+Precautions:
+Keep a detailed record of past drug reactions and inform healthcare providers of allergies. Always double-check prescriptions and read medication labels carefully.
+
+
+Disease: Peptic ulcer disease
+First Aid:
+Avoid eating or drinking substances that irritate the stomach, such as spicy foods, alcohol, or caffeine. Take antacids for immediate relief. Seek medical attention if you experience severe pain or blood in stools.
+Precautions:
+Avoid NSAIDs like aspirin or ibuprofen unless directed by a doctor. Eat smaller meals and avoid smoking and excessive alcohol consumption.
+
+
+Disease: AIDS
+First Aid:
+Ensure wounds or injuries are cleaned and bandaged to prevent infections. Use antiseptic solutions to disinfect any cuts. Seek medical advice immediately if opportunistic infections are suspected.
+Precautions:
+Follow antiretroviral therapy (ART) consistently as prescribed. Avoid exposure to infections by practicing good hygiene and avoiding contact with sick individuals.
+
+
+Disease: Diabetes
+First Aid:
+For low blood sugar (hypoglycemia), consume fast-acting carbohydrates like glucose tablets, candy, or fruit juice. For high blood sugar, ensure hydration and check blood sugar levels. Seek emergency care if symptoms worsen.
+Precautions:
+Monitor blood sugar levels regularly. Maintain a balanced diet, engage in regular physical activity, and adhere to prescribed medications or insulin therapy.
+
+
+Disease: Gastroenteritis
+First Aid:
+Stay hydrated by drinking oral rehydration solutions (ORS) or clear fluids. Avoid solid foods until vomiting or diarrhea subsides. Rest and monitor for signs of dehydration, such as dry mouth or reduced urine output.
+Precautions:
+Wash hands frequently to prevent the spread of infection. Avoid consuming contaminated food or water. Ensure proper food hygiene practices.
+
+
+Disease: Bronchial Asthma
+First Aid:
+Use a prescribed rescue inhaler immediately during an asthma attack. Sit upright to improve breathing. Seek emergency medical help if symptoms persist or worsen.
+Precautions:
+Identify and avoid triggers like allergens, smoke, or cold air. Follow a treatment plan with maintenance inhalers and medications.
+
+
+Disease: Hypertension
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Migraine
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Cervical spondylosis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Paralysis (brain hemorrhage)
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Jaundice
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Malaria
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Chicken pox
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Dengue
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Typhoid
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis A
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis B
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis C
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis D
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis E
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Alcoholic hepatitis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Tuberculosis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Common Cold
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Pneumonia
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Dimorphic hemorrhoids (piles)
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Heart attack
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Varicose veins
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hypothyroidism
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hyperthyroidism
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hypoglycemia
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Osteoarthritis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Arthritis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: (vertigo) Paroxysmal Positional Vertigo
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Acne
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Urinary tract infection
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Psoriasis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Impetigo
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Fungal infection
+First Aid:
+Clean the affected area with mild soap and water. Pat the area completely dry. Apply over-the-counter antifungal creams or powders as directed. Avoid scratching to prevent further irritation. If symptoms persist, consult a dermatologist.
+Precautions:
+Keep the skin clean and dry. Avoid wearing tight or synthetic clothing. Change out of sweaty clothes promptly. Use antifungal powders in high-moisture areas like feet or groin. Do not share personal items like towels.
+
+
+Disease: Allergy
+First Aid:
+Remove yourself from the source of the allergen immediately. Take antihistamines to alleviate mild symptoms like itching or rashes. Use cool compresses on affected areas to reduce swelling. For severe reactions (e.g., breathing difficulties), administer an epinephrine auto-injector and call emergency services.
+Precautions:
+Identify triggers through allergy testing. Avoid known allergens and maintain a clean environment to minimize dust and pollen exposure. Carry an EpiPen if prescribed and wear a medical alert bracelet.
+
+
+Disease: GERD
+First Aid:
+Sip water to neutralize stomach acid. Chew non-mint gum to increase saliva and reduce acid levels. Avoid lying down for at least 2-3 hours after eating. If discomfort persists, take antacids or consult a healthcare provider for prescription medications.
+Precautions:
+Eat small, frequent meals instead of large ones. Avoid trigger foods such as spicy, fatty, or acidic items. Maintain a healthy weight and avoid alcohol and smoking, as these can exacerbate symptoms.
+
+
+Disease: Chronic cholestasis
+First Aid:
+Consult a healthcare provider promptly if symptoms like severe itching or jaundice occur. In the meantime, avoid alcohol to reduce liver stress. Use cool compresses or take antihistamines for symptom relief.
+Precautions:
+Adopt a low-fat diet to support liver health. Monitor liver function regularly and avoid medications that can strain the liver. Stay hydrated and avoid exposure to environmental toxins.
+
+
+Disease: Drug Reaction
+First Aid:
+Discontinue the suspected medication immediately. For mild reactions like rashes, take antihistamines and apply calamine lotion to soothe the skin. For severe reactions like anaphylaxis, administer an epinephrine auto-injector and seek emergency medical help.
+Precautions:
+Keep a detailed record of past drug reactions and inform healthcare providers of allergies. Always double-check prescriptions and read medication labels carefully.
+
+
+Disease: Peptic ulcer disease
+First Aid:
+Avoid eating or drinking substances that irritate the stomach, such as spicy foods, alcohol, or caffeine. Take antacids for immediate relief. Seek medical attention if you experience severe pain or blood in stools.
+Precautions:
+Avoid NSAIDs like aspirin or ibuprofen unless directed by a doctor. Eat smaller meals and avoid smoking and excessive alcohol consumption.
+
+
+Disease: AIDS
+First Aid:
+Ensure wounds or injuries are cleaned and bandaged to prevent infections. Use antiseptic solutions to disinfect any cuts. Seek medical advice immediately if opportunistic infections are suspected.
+Precautions:
+Follow antiretroviral therapy (ART) consistently as prescribed. Avoid exposure to infections by practicing good hygiene and avoiding contact with sick individuals.
+
+
+Disease: Diabetes
+First Aid:
+For low blood sugar (hypoglycemia), consume fast-acting carbohydrates like glucose tablets, candy, or fruit juice. For high blood sugar, ensure hydration and check blood sugar levels. Seek emergency care if symptoms worsen.
+Precautions:
+Monitor blood sugar levels regularly. Maintain a balanced diet, engage in regular physical activity, and adhere to prescribed medications or insulin therapy.
+
+
+Disease: Gastroenteritis
+First Aid:
+Stay hydrated by drinking oral rehydration solutions (ORS) or clear fluids. Avoid solid foods until vomiting or diarrhea subsides. Rest and monitor for signs of dehydration, such as dry mouth or reduced urine output.
+Precautions:
+Wash hands frequently to prevent the spread of infection. Avoid consuming contaminated food or water. Ensure proper food hygiene practices.
+
+
+Disease: Bronchial Asthma
+First Aid:
+Use a prescribed rescue inhaler immediately during an asthma attack. Sit upright to improve breathing. Seek emergency medical help if symptoms persist or worsen.
+Precautions:
+Identify and avoid triggers like allergens, smoke, or cold air. Follow a treatment plan with maintenance inhalers and medications.
+
+
+Disease: Hypertension
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Migraine
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Cervical spondylosis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Paralysis (brain hemorrhage)
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Jaundice
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Malaria
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Chicken pox
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Dengue
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Typhoid
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis A
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis B
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis C
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis D
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis E
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Alcoholic hepatitis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Tuberculosis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Common Cold
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Pneumonia
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Dimorphic hemorrhoids (piles)
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Heart attack
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Varicose veins
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hypothyroidism
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hyperthyroidism
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hypoglycemia
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Osteoarthritis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Arthritis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: (vertigo) Paroxysmal Positional Vertigo
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Acne
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Urinary tract infection
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Psoriasis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Impetigo
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Fungal infection
+First Aid:
+Clean the affected area with mild soap and water. Pat the area completely dry. Apply over-the-counter antifungal creams or powders as directed. Avoid scratching to prevent further irritation. If symptoms persist, consult a dermatologist.
+Precautions:
+Keep the skin clean and dry. Avoid wearing tight or synthetic clothing. Change out of sweaty clothes promptly. Use antifungal powders in high-moisture areas like feet or groin. Do not share personal items like towels.
+
+
+Disease: Allergy
+First Aid:
+Remove yourself from the source of the allergen immediately. Take antihistamines to alleviate mild symptoms like itching or rashes. Use cool compresses on affected areas to reduce swelling. For severe reactions (e.g., breathing difficulties), administer an epinephrine auto-injector and call emergency services.
+Precautions:
+Identify triggers through allergy testing. Avoid known allergens and maintain a clean environment to minimize dust and pollen exposure. Carry an EpiPen if prescribed and wear a medical alert bracelet.
+
+
+Disease: GERD
+First Aid:
+Sip water to neutralize stomach acid. Chew non-mint gum to increase saliva and reduce acid levels. Avoid lying down for at least 2-3 hours after eating. If discomfort persists, take antacids or consult a healthcare provider for prescription medications.
+Precautions:
+Eat small, frequent meals instead of large ones. Avoid trigger foods such as spicy, fatty, or acidic items. Maintain a healthy weight and avoid alcohol and smoking, as these can exacerbate symptoms.
+
+
+Disease: Chronic cholestasis
+First Aid:
+Consult a healthcare provider promptly if symptoms like severe itching or jaundice occur. In the meantime, avoid alcohol to reduce liver stress. Use cool compresses or take antihistamines for symptom relief.
+Precautions:
+Adopt a low-fat diet to support liver health. Monitor liver function regularly and avoid medications that can strain the liver. Stay hydrated and avoid exposure to environmental toxins.
+
+
+Disease: Drug Reaction
+First Aid:
+Discontinue the suspected medication immediately. For mild reactions like rashes, take antihistamines and apply calamine lotion to soothe the skin. For severe reactions like anaphylaxis, administer an epinephrine auto-injector and seek emergency medical help.
+Precautions:
+Keep a detailed record of past drug reactions and inform healthcare providers of allergies. Always double-check prescriptions and read medication labels carefully.
+
+
+Disease: Peptic ulcer disease
+First Aid:
+Avoid eating or drinking substances that irritate the stomach, such as spicy foods, alcohol, or caffeine. Take antacids for immediate relief. Seek medical attention if you experience severe pain or blood in stools.
+Precautions:
+Avoid NSAIDs like aspirin or ibuprofen unless directed by a doctor. Eat smaller meals and avoid smoking and excessive alcohol consumption.
+
+
+Disease: AIDS
+First Aid:
+Ensure wounds or injuries are cleaned and bandaged to prevent infections. Use antiseptic solutions to disinfect any cuts. Seek medical advice immediately if opportunistic infections are suspected.
+Precautions:
+Follow antiretroviral therapy (ART) consistently as prescribed. Avoid exposure to infections by practicing good hygiene and avoiding contact with sick individuals.
+
+
+Disease: Diabetes
+First Aid:
+For low blood sugar (hypoglycemia), consume fast-acting carbohydrates like glucose tablets, candy, or fruit juice. For high blood sugar, ensure hydration and check blood sugar levels. Seek emergency care if symptoms worsen.
+Precautions:
+Monitor blood sugar levels regularly. Maintain a balanced diet, engage in regular physical activity, and adhere to prescribed medications or insulin therapy.
+
+
+Disease: Gastroenteritis
+First Aid:
+Stay hydrated by drinking oral rehydration solutions (ORS) or clear fluids. Avoid solid foods until vomiting or diarrhea subsides. Rest and monitor for signs of dehydration, such as dry mouth or reduced urine output.
+Precautions:
+Wash hands frequently to prevent the spread of infection. Avoid consuming contaminated food or water. Ensure proper food hygiene practices.
+
+
+Disease: Bronchial Asthma
+First Aid:
+Use a prescribed rescue inhaler immediately during an asthma attack. Sit upright to improve breathing. Seek emergency medical help if symptoms persist or worsen.
+Precautions:
+Identify and avoid triggers like allergens, smoke, or cold air. Follow a treatment plan with maintenance inhalers and medications.
+
+
+Disease: Hypertension
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Migraine
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Cervical spondylosis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Paralysis (brain hemorrhage)
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Jaundice
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Malaria
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Chicken pox
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Dengue
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Typhoid
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis A
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis B
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis C
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis D
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hepatitis E
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Alcoholic hepatitis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Tuberculosis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Common Cold
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Pneumonia
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Dimorphic hemorrhoids (piles)
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Heart attack
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Varicose veins
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hypothyroidism
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hyperthyroidism
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Hypoglycemia
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Osteoarthritis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.
+
+
+Disease: Arthritis
+First Aid:
+No first aid information available yet.
+Precautions:
+No precautionary information available yet.

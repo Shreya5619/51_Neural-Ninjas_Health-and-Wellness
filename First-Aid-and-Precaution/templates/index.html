@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom-Based Disease Prediction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-50 to-blue-100 min-h-screen flex items-center justify-center">
+
+    <div class="max-w-lg w-full bg-white p-8 rounded-lg shadow-xl">
+        <h1 class="text-4xl font-bold mb-6 text-center text-blue-600">Symptom-Based Prediction</h1>
+        <p class="text-gray-600 text-center mb-8">Enter your symptoms below to predict the disease and get helpful advice.</p>
+        
+        <!-- Input Field -->
+        <div class="mb-6">
+            <label for="symptoms" class="block text-lg font-medium text-gray-700 mb-2">Enter Your Symptoms:</label>
+            <input type="text" id="symptoms" name="symptoms" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="e.g., headache, fever, fatigue" required>
+        </div>
+
+        <!-- Submit Button -->
+        <button onclick="getPrediction()" class="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold shadow-lg hover:bg-blue-600 focus:outline-none">
+            Submit
+        </button>
+
+        <!-- Response Section -->
+        <div id="response" class="mt-8 p-6 border border-blue-200 rounded-lg bg-blue-50 hidden">
+            <h2 class="font-bold text-2xl text-blue-600 mb-4">Prediction Result:</h2>
+            <p id="predictedDisease" class="text-lg text-gray-800 font-semibold"></p>
+            <p id="severityInfo" class="text-lg text-gray-700 mt-2"></p>
+            <p id="generatedText" class="text-lg text-gray-700 mt-2"></p>
+        </div>
+    </div>
+
+    <script>
+        async function getPrediction() {
+            const symptoms = document.getElementById('symptoms').value;
+
+            if (!symptoms) {
+                alert("Please enter some symptoms.");
+                return;
+            }
+
+            try {
+                const response = await fetch('/predict', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ symptoms: symptoms })
+                });
+
+                const data = await response.json();
+
+                // Update the UI with the response
+                document.getElementById('predictedDisease').innerText = `Disease: ${data.predicted_disease}`;
+                document.getElementById('severityInfo').innerText = `Severity: ${data.severity_info}`;
+                document.getElementById('generatedText').innerText = `First Aid/Self-Care: ${data.generated_text}`;
+
+                // Show the response section
+                document.getElementById('response').classList.remove('hidden');
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error occurred while getting prediction.');
+            }
+        }
+    </script>
+
+</body>
+</html>

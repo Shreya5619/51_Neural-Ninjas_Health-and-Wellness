@@ -73,6 +73,7 @@ class CNN_Model(nn.Module):
         x = self.classifier(x)
         return x
 
+'''
 dataset = ImageFolder(root=r'Datasets/skin disease recognizer/train', transform=transform)
 class_names = dataset.classes
 dataset= CustomDataset(dataset=dataset)
@@ -155,3 +156,6 @@ for idx, img in enumerate(images):
     plt.axis("off")
 plt.tight_layout()
 plt.show()
+
+torch.save(model_0.state_dict(), "Skin Disease Recognizer.pth")
+'''
