@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Hospitals</title>
+    <script>
+        async function getNearbyHospitals() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(async (position) => {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+
+                    // Send location to Flask
+                    const response = await fetch('/find_hospitals', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ latitude, longitude })
+                    });
+
+                    const hospitals = await response.json();
+                    displayHospitals(hospitals);
+                });
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function displayHospitals(hospitals) {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = ''; // Clear previous results
+
+            hospitals.forEach(hospital => {
+                const div = document.createElement('div');
+                div.innerHTML = `
+                    <h3>${hospital.Name}</h3>
+                    <p><strong>Specialty:</strong> ${hospital.Specialty}</p>
+                    <p><strong>Distance:</strong> ${hospital.Distance.toFixed(2)} km</p>
+                    <p><strong>Rating:</strong> ${hospital.Rating}</p>
+                    <hr>
+                `;
+                resultsDiv.appendChild(div);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Nearby Hospitals</h1>
+    <button onclick="getNearbyHospitals()">Find Hospitals Near Me</button>
+    <div id="results"></div>
+</body>
+</html>
